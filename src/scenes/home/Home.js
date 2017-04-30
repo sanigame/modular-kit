@@ -10,7 +10,7 @@ class Home extends Component {
       <View style={styles.container}>
         <Text>Home on modular</Text>
         <Button
-          onPress={()=>Actions.about()}
+          onPress={()=>Actions.modularAbout()}
           title="About Scene"
           color="orange"
           accessibilityLabel="Go to about scene" />
