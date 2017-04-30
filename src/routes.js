@@ -7,8 +7,8 @@ import * as scene from './scenes'
 export const Scenes = () => {
   return (
     <Scene key={project.name}>
-      <Scene key="home" component={scene.Home} title="Home" initial />
-      <Scene key="about" component={scene.About} title="About" />
+      <Scene key="modularHome" component={scene.Home} title="Home" initial />
+      <Scene key="modularAbout" component={scene.About} title="About" />
     </Scene>
   )
 }
