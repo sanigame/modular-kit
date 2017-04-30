@@ -1,7 +1,7 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { connect } from 'react-redux';
+import { View, Text, StyleSheet, Button } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 
 // create a component
 class Home extends Component {
@@ -9,6 +9,11 @@ class Home extends Component {
     return (
       <View style={styles.container}>
         <Text>Home on modular</Text>
+        <Button
+          onPress={()=>Actions.about()}
+          title="About Scene"
+          color="orange"
+          accessibilityLabel="Go to about scene" />
       </View>
     );
   }

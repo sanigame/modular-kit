@@ -8,6 +8,7 @@ const Routes = () => {
   return (
     <Router sceneStyle={{ marginTop: 70 }}>
       <Scene key="home" component={ scene.Home } title="Home" initial />
+      <Scene key="about" component={ scene.About } title="About" />
     </Router>
   )
 }

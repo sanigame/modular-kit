@@ -2,4 +2,4 @@
 export { Feed, FeedContainer, reducers } from './features'
 
 // export scenes
-export { Home } from './scenes'
+export { Home, About } from './scenes'
