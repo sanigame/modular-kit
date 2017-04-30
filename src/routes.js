@@ -4,19 +4,21 @@ import { project } from './config';
 import * as feature from './features'
 import * as scene from './scenes'
 
-export const Scenes = (feature = project.name) => {
-  return (
-    <Scene key={feature}>
-      <Scene key="modularHome" component={scene.Home} title="Home" initial />
-      <Scene key="modularAbout" component={scene.About} title="About" />
-    </Scene>
-  )
+export const Scenes = [
+  { key: 'modularHome', component: 'scene.Home', title: '', options: {} },
+  { key: 'modularAbout', component: 'scene.About', title: '', options: {} },
+]
+
+const renderScenes = (sceneArr = []) => {
+  return sceneArr.map((scene, index) => {
+    return(<Scene key={scene.key} component={About} title={scene.title}/>)
+  })
 }
 
 const Routes = () => {
   return (
     <Router sceneStyle={{ marginTop: 70 }}>
-      { Scenes(project.name) }
+      {renderScenes(Scenes)}
     </Router>
   )
 }

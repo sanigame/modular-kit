@@ -5,4 +5,4 @@ export { Feed, FeedContainer, reducers } from './features'
 export { Home, About } from './scenes'
 
 // export router scene
-export { default as Scenes } from './routes'
+export { Scenes } from './routes'
