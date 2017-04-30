@@ -52,6 +52,6 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 
-# modular kit
-android
-ios
+# modular kit 
+android/
+ios/
