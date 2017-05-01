@@ -4,12 +4,12 @@ import { project } from './config';
 import * as scene from './scenes'
 
 export const Scenes = [
-  { key: 'modularAbout', component: 'About', type: 'scene', title: 'm About', options: {} },
+  { key: 'modularAbout', component: 'About', title: 'm About', options: {} },
 ]
 
-const renderScenes = (sceneArr = []) => {
+const renderScenes = (sceneArr = [], module) => {
   return sceneArr.map((value, index) => {
-    return(<Scene key={value.key} component={scene[value.component]} title={value.title}/>)
+    return(<Scene key={value.key} component={module[value.component]} title={value.title}/>)
   })
 }
 
@@ -17,7 +17,7 @@ const Routes = () => {
   return (
     <Router sceneStyle={{ marginTop: 70 }}>
       <Scene key="modularHome" component={scene.Home} title="m Home" initial />
-      {renderScenes(Scenes)}
+      {renderScenes(Scenes, scene)}
     </Router>
   )
 }

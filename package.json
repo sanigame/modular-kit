@@ -1,6 +1,6 @@
 {
   "name": "ModularKit",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "main": "src/",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -23,5 +23,11 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "author": "Supasan Suklim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanigame/modular-kit/issues"
+  },
+  "homepage": "https://github.com/sanigame/modular-kit#readme"
 }
