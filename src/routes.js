@@ -5,6 +5,10 @@ import * as scene from './scenes'
 
 export const Scenes = [
   { key: 'modularAbout', component: 'About', title: 'm About', options: {} },
+  { key: 'modularForm', component: 'Form', title: 'm Form', options: {} },
+  { key: 'modularDefaultForm', component: 'DefaultFrom', title: 'm DefaultForm', options: {} },
+  { key: 'modularInitForm', component: 'InitFrom', title: 'm InitForm', options: {} },
+  { key: 'modularValidateForm', component: 'ValidateFrom', title: 'm ValidateForm', options: {} },
 ]
 
 const renderScenes = (sceneArr = [], module) => {

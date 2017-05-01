@@ -7,13 +7,18 @@ import { Actions } from 'react-native-router-flux';
 class Home extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View>
         <Text>Home on modular</Text>
         <Button
           onPress={()=>Actions.modularAbout()}
           title="About Scene"
           color="orange"
           accessibilityLabel="Go to about scene" />
+        <Button
+          onPress={()=>Actions.modularForm()}
+          title="Form"
+          color="blue"
+          accessibilityLabel="Go to form scene" />
       </View>
     );
   }

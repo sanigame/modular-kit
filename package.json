@@ -1,6 +1,6 @@
 {
   "name": "ModularKit",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "main": "src/",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -12,6 +12,7 @@
     "react-native-router-flux": "3.38.0",
     "react-redux": "^5.0.4",
     "redux": "^3.6.0",
+    "redux-form": "^6.6.3",
     "redux-logger": "^3.0.1",
     "redux-thunk": "^2.2.0"
   },
@@ -23,11 +24,5 @@
   },
   "jest": {
     "preset": "react-native"
-  },
-  "author": "Supasan Suklim",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sanigame/modular-kit/issues"
-  },
-  "homepage": "https://github.com/sanigame/modular-kit#readme"
+  }
 }
