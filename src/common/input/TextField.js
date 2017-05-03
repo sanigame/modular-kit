@@ -11,9 +11,7 @@ const TextField = ({ input, label, type, meta: { touched, error, warning } }) =>
         {...input} 
         placeholder={label}
         style={{height: 40}} />
-      <Text style={{color: 'red'}}>
-        {touched && ((error && <span>{error}</span>) || (warning && <span>{warning}</span>))}
-      </Text>
+      {touched && ((error && <Text style={{color: 'red'}}>{error}</Text>) || (warning && <Text style={{color: 'red'}}>{warning}</Text>))}
     </View>
   );
 };
