@@ -1,6 +1,6 @@
 {
   "name": "ModularKit",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "main": "src/",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "react": "16.0.0-alpha.6",
-    "react-native": "0.43.4",
+    "react-native": "0.44.0",
     "react-native-router-flux": "3.38.0",
     "react-redux": "^5.0.4",
     "redux": "^3.6.0",
